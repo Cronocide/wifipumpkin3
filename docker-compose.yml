@@ -3,6 +3,7 @@ services:
   wifipumpkin3:
         build:
                 context: .
+        env_file: env.env
         privileged: true
         network_mode: "host"
         volumes:
